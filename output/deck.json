@@ -1,0 +1,55 @@
+{
+  "deck_name": "Sample GA Deck",
+  "cards": [
+    {
+      "name": "Fire Elemental",
+      "type": "Unit",
+      "cost": 3,
+      "power": 3,
+      "toughness": 2,
+      "ability": "When Fire Elemental enters, deal 1 damage to target opponent.",
+      "quantity": 2,
+      "image_url": ""
+    },
+    {
+      "name": "Healing Potion",
+      "type": "Spell",
+      "cost": 1,
+      "power": 0,
+      "toughness": 0,
+      "ability": "Target player gains 3 life.",
+      "quantity": 3,
+      "image_url": ""
+    },
+    {
+      "name": "Sword Master",
+      "type": "Unit",
+      "cost": 4,
+      "power": 4,
+      "toughness": 3,
+      "ability": "First Strike: This unit deals damage before combat.",
+      "quantity": 1,
+      "image_url": ""
+    },
+    {
+      "name": "Mystic Shield",
+      "type": "Spell",
+      "cost": 2,
+      "power": 0,
+      "toughness": 0,
+      "ability": "Target unit gains +0/+2 until end of turn.",
+      "quantity": 4,
+      "image_url": ""
+    },
+    {
+      "name": "Dark Summoning",
+      "type": "Spell",
+      "cost": 5,
+      "power": 0,
+      "toughness": 0,
+      "ability": "Search your deck for a unit and put it into play.",
+      "quantity": 2,
+      "image_url": ""
+    }
+  ]
+}
