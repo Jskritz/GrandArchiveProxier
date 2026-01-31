@@ -1,29 +1,65 @@
 # GrandArchiveProxier
 
-## How to use:
+## How to use
 
-Get any deck in one of the deck builders that can export to TTS
+This script now accepts either a local Tabletop Simulator JSON save or a decklist URL from supported sites and generates a single PDF containing the Main, Material and Sideboard cards.
 
-In Tabletop Simulator, use this mod:
-https://steamcommunity.com/sharedfiles/filedetails/?id=3430736587&searchtext=grand+archive
+Basic usage:
 
-Upload your deck into the mod, and it will create 3 decks: Main, Material, and Sidboard. Stack them all in one deck and save that as an Object on TTS
+```
+python generate_from_tts.py <path_or_url> --output <output_pdf_path>
+```
 
-Go to this folder: C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects -> replacing USERNAME with your username
+Examples:
 
-Inside, you will find a .json file with the name you saved for your deck. 
+- Fetch and generate from a decklist URL:
 
-Open the file: generate_from_tts.py, and change the variable tts_file to the path of your own deck .json file.
+```
+python generate_from_tts.py "https://tcgarchitect.com/grand-archive/tournaments/decklists/9746" -o output/tcg_9746_printable_all.pdf
+```
 
-Run on the terminal using "python generate_from_tts.py"; this will download the images and wait for it to finish. After it is done, it will create a file in the Output folder named tts_cards_printable.pdf
+- Generate from a local TTS save file:
 
-Rename the pdf file to avoid overwriting, and it's done. Just print this pdf file, and you're good to go.
+```
+python generate_from_tts.py "C:/Users/Josh/Documents/My Games/Tabletop Simulator/Saves/Saved Objects/my_deck.json" -o output/my_deck_printable.pdf
+```
 
-P.S. It is hacky and full of extra steps, but it works
+Notes:
+- If `--output` is omitted the script writes to `output/cards_printable.pdf` by default.
+- The script aggregates `main`, `material`, and `sideboard` decks (and other decks if present) into the same PDF.
+- A `deck.json` copy of the parsed deck will be written to the `output/` folder for reference.
 
 ## Requirements
-Python version 3.11 or newer
-Tabletop Simulator (available on Steam)
 
-## Plans
-I'll eventually try to make a simple UI and find a more reasonable way that doesn't involve using TTS, but for now this serves its purpose
+Install these Python packages (tested with Python 3.11+):
+
+```
+pip install requests Pillow reportlab
+```
+
+Alternatively you can install from a requirements file (not included by default):
+
+```
+pip install -r requirements.txt
+```
+
+## Supported sites
+
+The script attempts to convert common decklist page URLs to their JSON endpoints for these sites (same logic as the TTS Lua importer):
+
+- dungeongui.de
+- silvie.org / silvie.gg
+- shoutatyourdecks.com
+- jsonblob.com
+- tcgarchitect.com
+- fractalofin.site
+
+If a site responds with a JSON deck export the script will parse card names, images and quantities and include them in the PDF.
+
+## Troubleshooting
+
+- If the script prints `Response was not JSON; aborting.`, the URL you provided did not return JSON. Try the site’s export link or use a local TTS JSON file.
+- If images fail to download, check your network or run again (downloads are cached during a run).
+
+---
+Updated to simplify workflow: provide a single link or path and an output PDF path; the script does the rest.
