@@ -63,3 +63,17 @@ If a site responds with a JSON deck export the script will parse card names, ima
 
 ---
 Updated to simplify workflow: provide a single link or path and an output PDF path; the script does the rest.
+
+## Using the GUI (.exe)
+
+After building the GUI executable (see `README_build.md`), run the produced `gui.exe` from the `dist` folder or double-click it. The GUI exposes a small set of controls:
+
+- **`Deck URL or local TTS JSON`:** Paste a decklist page URL or a local Tabletop Simulator JSON save file path. Supported site URLs will be converted to JSON endpoints automatically. Use the **Browse...** button to pick a local file instead of typing a path.
+- **`Output PDF path`:** File path where the generated printable PDF will be saved. Click **Choose...** to open a Windows Save dialog, or **Use Default** to reset to `output/cards_printable.pdf`.
+- **`Generate`:** Starts creating the PDF. Controls are temporarily disabled and an indeterminate progress bar runs while the app works in the background.
+- **`Open Output`:** Enabled after a successful run. Click to open the generated PDF; if the PDF is missing the button opens the containing folder instead.
+
+Notes:
+- When a URL (not a local file) is used as the source, the GUI saves the original deck URL into a `deck_url.txt` file placed in the same folder as the generated PDF.
+- The app also writes a `deck.json` file (in the `output/` folder by default) containing the parsed deck data for reference.
+- If generation fails, an error dialog shows the exception traceback; re-run with a different source or examine the URL JSON manually.
