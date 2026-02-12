@@ -9,12 +9,11 @@ into JSON endpoints (same sites handled by the TTS Lua importer) and then
 extract card image URLs and quantities to build the printable PDF.
 """
 
-import argparse
 import json
 import requests
 from pathlib import Path
 from printerGA import GADeckPrinter
-from urllib.parse import urlparse
+from typing import Optional, Tuple
 
 
 # Create output directory
@@ -164,64 +163,69 @@ def build_printer_from_deck_json(data: dict, preferred_deck: str = None) -> GADe
     return printer
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Generate printable card PDF from TTS save or decklist URL")
-    parser.add_argument("source", help="Path to TTS JSON file or decklist URL")
-    parser.add_argument("--output", "-o", help="Output PDF filename", default=str(output_dir / "cards_printable.pdf"))
-    args = parser.parse_args()
+def generate_from_source(source: str, output: Optional[str] = None) -> Tuple[Optional[GADeckPrinter], Optional[str]]:
+    """Generate printable PDF from a local TTS JSON or a decklist URL.
 
-    src = args.source
-    out = args.output
+    Returns tuple (printer, output_path) on success, or (None, None) on failure.
+    """
+    out = output or str(output_dir / "cards_printable.pdf")
 
     printer = GADeckPrinter()
 
     # If file exists locally, try as TTS save first, then fallback to load_from_json
-    p = Path(src)
+    p = Path(source)
     if p.exists():
-        print(f"Loading local file: {src}")
-        # Heuristic: if file looks like a TTS save (contains ObjectStates), use load_from_tts
+        print(f"Loading local file: {source}")
         try:
             txt = p.read_text(encoding="utf-8")
             j = json.loads(txt)
             if isinstance(j, dict) and j.get("ObjectStates"):
-                printer.load_from_tts(src)
+                printer.load_from_tts(source)
             else:
-                printer.load_from_json(src)
+                printer.load_from_json(source)
         except Exception as e:
             print(f"Failed to parse local JSON: {e}")
-            return
+            return None, None
 
     else:
         # Treat as URL
-        url = src
-        url = transform_deck_url(url)
+        url = transform_deck_url(source)
         print(f"Fetching deck JSON from: {url}")
         try:
             resp = requests.get(url, timeout=15)
             resp.raise_for_status()
         except Exception as e:
             print(f"Error fetching URL: {e}")
-            return
+            return None, None
 
-        # Try JSON decode
         try:
             data = resp.json()
         except Exception:
-            # not JSON
             print("Response was not JSON; aborting.")
-            return
+            return None, None
 
         printer = build_printer_from_deck_json(data)
 
     if not printer.cards or sum(c.get("quantity", 1) for c in printer.cards) == 0:
         print("No cards found to render.")
-        return
+        return None, None
 
     print(f"Loaded {len(printer.cards)} unique cards (total copies: {sum(c.get('quantity',1) for c in printer.cards)})")
-    print("="*50)
+    print("=" * 50)
 
     # Generate printable cards PDF
     printer.create_printable_cards_pdf(out)
+    # Save the deck URL next to the output PDF when the source was a URL
+    try:
+        out_path = Path(out)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        # if the provided source was not a local file, treat it as a URL and save it
+        if not p.exists():
+            url_file = out_path.parent / "deck_url.txt"
+            url_file.write_text(source + "\n", encoding="utf-8")
+    except Exception:
+        # non-fatal; do not crash PDF generation if saving the URL fails
+        pass
     # Also save a deck.json for reference
     try:
         printer.save_to_json(str(output_dir / "deck.json"))
@@ -231,7 +235,5 @@ def main():
     print("\n✓ PDF generated successfully!")
     print(f"  - Printable Cards: {out}")
 
-
-if __name__ == "__main__":
-    main()
+    return printer, out
 
