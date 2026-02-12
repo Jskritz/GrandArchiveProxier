@@ -2,44 +2,94 @@
   "deck_name": "GA_Deck",
   "cards": [
     {
-      "name": "Grave Gateau",
+      "name": "Crystallized Destiny",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 2,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/crystallized-destiny-hvn.jpg"
+    },
+    {
+      "name": "Dungeon Guide",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 4,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/dungeon-guide-doa-alter.jpg"
+    },
+    {
+      "name": "Library Witch",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 4,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/library-witch-doa-alter.jpg"
+    },
+    {
+      "name": "Liminal Guide",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 4,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/liminal-guide-dtr.jpg"
+    },
+    {
+      "name": "Resolute Stand",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 3,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/resolute-stand-dtr.jpg"
+    },
+    {
+      "name": "Stalwart Shieldmate",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 4,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/stalwart-shieldmate-alcsd.jpg"
+    },
+    {
+      "name": "Topsy Decree",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 4,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/topsy-decree-ptm.jpg"
+    },
+    {
+      "name": "Turbo Charge",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/grave-gateau-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/turbo-charge-mrc.jpg"
     },
     {
-      "name": "Undying Dreams",
+      "name": "Undeniable Truth",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/undying-dreams-dtr.jpg"
-    },
-    {
-      "name": "Unyielding Wraithguard",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/unyielding-wraithguard-dtr.jpg"
-    },
-    {
-      "name": "Bill, Chimney Sweep",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/bill-chimney-sweep-ptm.jpg"
+      "quantity": 2,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/undeniable-truth-rec-brv.jpg"
     },
     {
       "name": "Creative Shock",
@@ -49,7 +99,7 @@
       "toughness": 0,
       "ability": "",
       "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/creative-shock-doa-alter.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/creative-shock-amb.jpg"
     },
     {
       "name": "Cremation Ritual",
@@ -58,48 +108,38 @@
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/cremation-ritual-doa-alter.jpg"
+      "quantity": 4,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/cremation-ritual-doa-alter.jpg"
     },
     {
-      "name": "Hasty Messenger",
+      "name": "Devastating Blow",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/hasty-messenger-demo23.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/devastating-blow-doap.jpg"
     },
     {
-      "name": "Rosewinged Hollow",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/rosewinged-hollow-ptm.jpg"
-    },
-    {
-      "name": "Vengeful Paramour",
+      "name": "Feu Awakening",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/vengeful-paramour-dtr.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/feu-awakening-ptm.jpg"
     },
     {
-      "name": "Advent of the Stormcaller",
+      "name": "Reduce to Ash",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 2,
-      "image_url": "https://shoutatyourdecks.com/images/advent-of-the-stormcaller-doa-alter.jpg"
+      "quantity": 3,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/reduce-to-ash-mrc.jpg"
     },
     {
       "name": "Abnegation",
@@ -109,97 +149,87 @@
       "toughness": 0,
       "ability": "",
       "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/abnegation-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/abnegation-ptm.jpg"
     },
     {
-      "name": "Baleful Oblation",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/baleful-oblation-dtr.jpg"
-    },
-    {
-      "name": "Bandersnatch, Frumious Foe",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/bandersnatch-frumious-foe-ptm.jpg"
-    },
-    {
-      "name": "Harrow the Saved",
+      "name": "Beguiling Coup",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 2,
-      "image_url": "https://shoutatyourdecks.com/images/harrow-the-saved-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/beguiling-coup-dtr.jpg"
     },
     {
-      "name": "Jabberwocky, Calamity's Call",
+      "name": "Carter, Synthetic Reaper",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 2,
-      "image_url": "https://shoutatyourdecks.com/images/jabberwocky-calamitys-call-ptm1e.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/carter-synthetic-reaper-alc.jpg"
     },
     {
-      "name": "Lost Promises",
+      "name": "Grim Pastiche",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 3,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/grim-pastiche-dtr.jpg"
+    },
+    {
+      "name": "Nocturne's Oblivion",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/lost-promises-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/nocturnes-oblivion-dtrsd.jpg"
     },
     {
-      "name": "Maledictum Vitae",
+      "name": "Umbra Sight",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/maledictum-vitae-ptm.jpg"
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/umbra-sight-alc.jpg"
     },
     {
-      "name": "Remnant of Will",
+      "name": "Regal Inquisition",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/remnant-of-will-ptm.jpg"
+      "quantity": 2,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/regal-inquisition-dtr.jpg"
     },
     {
-      "name": "Shackled Theurgist",
+      "name": "Powercell",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 4,
-      "image_url": "https://shoutatyourdecks.com/images/shackled-theurgist-dtr.jpg"
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/powercell-mrc-b.jpg"
     },
     {
-      "name": "Spectral Haunting",
+      "name": "Servile Possessions",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/spectral-haunting-ptm.jpg"
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/servile-possessions-dtrsd.jpg"
     },
     {
       "name": "[material] Spirit of Fire",
@@ -209,27 +239,37 @@
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/spirit-of-fire-dtr.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/spirit-of-fire-alc.jpg"
     },
     {
-      "name": "[material] Alice, Distorted Queen",
+      "name": "[material] Ciel, Loyal Valet",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/alice-distorted-queen-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/ciel-loyal-valet-dtr.jpg"
     },
     {
-      "name": "[material] Alice, Phantom Monarch",
+      "name": "[material] Ciel, Omenbringer",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/alice-phantom-monarch-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/ciel-omenbringer-dtr.jpg"
+    },
+    {
+      "name": "[material] Ciel, Mirage's Grave",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/ciel-mirages-grave-dtr.jpg"
     },
     {
       "name": "[material] Backup Charger",
@@ -239,57 +279,67 @@
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/backup-charger-mrc.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/backup-charger-mrc.jpg"
     },
     {
-      "name": "[material] Condemned Trinket",
+      "name": "[material] Chalice of Blood",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/condemned-trinket-dtr.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/chalice-of-blood-doa-alter.jpg"
     },
     {
-      "name": "[material] Memento Pocketwatch",
+      "name": "[material] Enfeebling Orb",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/memento-pocketwatch-dtr.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/enfeebling-orb-ptm.jpg"
     },
     {
-      "name": "[material] Oneiric Key",
+      "name": "[material] Manxome Armoire",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/oneiric-key-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/manxome-armoire-dtrsd.jpg"
     },
     {
-      "name": "[material] Mantle of the Abyss",
+      "name": "[material] Tariff Ring",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/mantle-of-the-abyss-prxy.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/tariff-ring-dtrsd.jpg"
     },
     {
-      "name": "[material] Ducal Seal",
+      "name": "[material] Devouring Malice",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/ducal-seal-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/devouring-malice-dtr1e.jpg"
+    },
+    {
+      "name": "[material] Grande Sonnerie",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/grande-sonnerie-dtrsd.jpg"
     },
     {
       "name": "[material] Lost Providence",
@@ -299,57 +349,107 @@
       "toughness": 0,
       "ability": "",
       "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/lost-providence-ptm1e.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/lost-providence-ptm1e.jpg"
     },
     {
-      "name": "[material] Death Essence Amulet",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/death-essence-amulet-dtr.jpg"
-    },
-    {
-      "name": "[material] Ticket to the Afterlife",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 1,
-      "image_url": "https://shoutatyourdecks.com/images/ticket-to-the-afterlife-ptm1e.jpg"
-    },
-    {
-      "name": "[sideboard] Purification",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 3,
-      "image_url": "https://shoutatyourdecks.com/images/purification-mrc.jpg"
-    },
-    {
-      "name": "[sideboard] Lost Promises",
+      "name": "[sideboard] Annul Spell",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
       "quantity": 2,
-      "image_url": "https://shoutatyourdecks.com/images/lost-promises-ptm.jpg"
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/annul-spell-hvn.jpg"
     },
     {
-      "name": "[references] Phantasmagoria",
+      "name": "[sideboard] Crystallized Destiny",
       "type": "Card",
       "cost": 0,
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 0,
-      "image_url": "https://shoutatyourdecks.com/images/phantasmagoria-ptm.jpg"
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/crystallized-destiny-hvn.jpg"
+    },
+    {
+      "name": "[sideboard] Orb of Sealing",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/orb-of-sealing-amb.jpg"
+    },
+    {
+      "name": "[sideboard] Overlapping Visages",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 2,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/overlapping-visages-rec-brv.jpg"
+    },
+    {
+      "name": "[sideboard] Staggering Strike",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/staggering-strike-amb.jpg"
+    },
+    {
+      "name": "[sideboard] Flamewreath Call",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 2,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/flamewreath-call-rec-hvf.jpg"
+    },
+    {
+      "name": "[sideboard] Under Fire",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 2,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/under-fire-mrc.jpg"
+    },
+    {
+      "name": "[sideboard] Carter, Synthetic Reaper",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/carter-synthetic-reaper-alc.jpg"
+    },
+    {
+      "name": "[sideboard] Regal Inquisition",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/regal-inquisition-dtr.jpg"
+    },
+    {
+      "name": "[references] Servile Possessions",
+      "type": "Card",
+      "cost": 0,
+      "power": 0,
+      "toughness": 0,
+      "ability": "",
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/servile-possessions-dtrsd.jpg"
     },
     {
       "name": "[references] Powercell",
@@ -358,18 +458,8 @@
       "power": 0,
       "toughness": 0,
       "ability": "",
-      "quantity": 0,
-      "image_url": "https://shoutatyourdecks.com/images/powercell-mrc-a.jpg"
-    },
-    {
-      "name": "[references] Rile the Abyss",
-      "type": "Card",
-      "cost": 0,
-      "power": 0,
-      "toughness": 0,
-      "ability": "",
-      "quantity": 0,
-      "image_url": "https://shoutatyourdecks.com/images/rile-the-abyss-dtr.jpg"
+      "quantity": 1,
+      "image_url": "https://tcg-architect-bucket.nyc3.digitaloceanspaces.com/cards/powercell-mrc-b.jpg"
     }
   ]
 }
